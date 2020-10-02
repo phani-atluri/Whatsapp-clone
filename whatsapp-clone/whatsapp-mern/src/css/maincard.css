@@ -1,0 +1,11 @@
+.maincard {
+  height: 850px;
+  display: flex;
+}
+.maincard__sidebar {
+  flex: 1;
+}
+.maincard__chatwindow {
+  flex: 2;
+  background-color: beige;
+}

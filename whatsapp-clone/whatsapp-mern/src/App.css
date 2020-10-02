@@ -1,0 +1,18 @@
+.App {
+  height: 100vh;
+}
+.green {
+  padding-top: 20px;
+  background-color: rgba(18, 133, 117, 0.9);
+  height: 10vh;
+}
+.gray {
+  background-color: rgba(236, 238, 238, 0.9);
+  height: 100vh;
+}
+.app__mainCard {
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+}

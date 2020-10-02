@@ -1,0 +1,86 @@
+.chatwindow {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+}
+.chatwindow__header {
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+  background-color: rgb(244, 244, 244);
+  height: 50px;
+  position: sticky;
+  width: 100%;
+}
+.header__left {
+  display: flex;
+  flex: 5;
+  align-items: center;
+}
+.header__right {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  align-items: center;
+}
+.chatwindow__footer {
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(244, 244, 244);
+  align-items: center;
+  display: flex;
+  position: sticky;
+}
+.chatwindow__input {
+  width: 100%;
+  margin: 0 20px;
+}
+.chatwindow__input > input:focus {
+  outline: none;
+}
+.chatwindow__input > input {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  padding: 5px;
+}
+.chatwindow__body {
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: grey;
+}
+.chatwindow__msg {
+  background-color: white;
+  object-fit: contain;
+  width: 50%;
+  padding: 10px;
+  border-radius: 9px;
+  margin: 10px;
+  float: left;
+}
+.chatwindow__msgReceived {
+  background-color: rgb(212, 248, 186);
+  object-fit: contain;
+  width: 50%;
+  padding: 10px;
+  border-radius: 9px;
+  margin: 10px;
+  float: right;
+}
+.chatwindow__msgtime {
+  display: flex;
+  font-size: x-small;
+  justify-content: flex-end;
+}
+.chatwindow__msgname {
+  display: flex;
+  font-size: small;
+  justify-content: flex-start;
+  color: coral;
+  margin-bottom: 5px;
+}
