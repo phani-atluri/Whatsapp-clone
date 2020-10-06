@@ -11,16 +11,16 @@ app.use(express.json());
 app.use(cors());
 var pusher = new Pusher({
   appId: "1082860",
-  key: "4f0ec8b3b2793124de4c",
-  secret: "308fc98f2e08eb2af84f",
+  key: "",
+  secret: "",
   cluster: "us2",
   encrypted: true,
 });
 
 //DB connection
-//key : DVydOKUuGs5NnfzL;
+
 const connection_string =
-  "mongodb+srv://Admin:DVydOKUuGs5NnfzL@cluster0.b5dkl.gcp.mongodb.net/WhatsappDB?retryWrites=true&w=majority";
+  "mongodb+srv://Admin:Key@cluster0.b5dkl.gcp.mongodb.net/WhatsappDB?retryWrites=true&w=majority";
 mongoose
   .connect(connection_string, {
     useNewUrlParser: true,
